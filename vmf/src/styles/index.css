@@ -1,0 +1,21 @@
+@import "tailwindcss";
+// to add plugins -> syntax : @plugin "daisyui"
+
+@theme {
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --color-primary: #D2C1B6;
+  --color-secondary: #1B3C53;
+  --color-button-primary: #456882;
+  --color-button-hover: #234C6A;
+}
+
+.bg-color {
+  background-color: #1B3C53;
+}
+
+.text-nav {
+  color: #D2C1B6;
+;
+}
