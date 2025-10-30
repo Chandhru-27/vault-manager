@@ -25,14 +25,14 @@ const Header = () => {
   return (
     <>
       {/* Fixed Header */}
-      <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-white/80 border-b border-slate-200/50 shadow-sm">
+      <header className="relative top-0 left-0 right-0 z-40 backdrop-blur-md bg-[#7b7b7b] border-b border-slate-200/50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg flex items-center justify-center">
-                <Home className="w-5 h-5 text-white" />
+              <div className="w-6 h-6 sm:w-9 sm:h-9 bg-[#016B61] rounded-lg flex items-center justify-center">
+                <Home className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+              <h1 className="text-xl sm:text-2xl font-bold text-[#d4ffee]">
                 Vault Manager
               </h1>
             </div>

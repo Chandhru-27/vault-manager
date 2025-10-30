@@ -2,7 +2,12 @@
 
 
 body {
-  background-color: #D2C1B6;
+   background: linear-gradient(
+    to bottom right,
+    #ffffff 0%,   
+    #efefef 50%,  
+    #e9e9e9 100%  
+  );
   
 }
 

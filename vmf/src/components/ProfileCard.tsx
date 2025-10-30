@@ -43,21 +43,21 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ className }) => {
   const displayImage = preview || user?.profileImage || null;
 
   return (
-    <div className="flex justify-center items-center w-full h-full px-4 py-8">
+    <div className="flex flex-wrap justify-center  items-center w-full h-full px-2 py-0">
       {/* Modern Profile Card */}
       <div
         className={cn(
-          "relative bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-xl border border-slate-200/50 transition-all duration-300 hover:-translate-y-1 max-w-2xl w-full",
+          "relative flex w-full h-[40vh] bg-white/70  backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-xl border-2  border-black/40 transition-all duration-300 hover:-translate-y-1 ",
           className
         )}
       >
         {/* Background Gradient */}
         <div className="absolute inset-0 bg-linear-to-br from-indigo-50/50 to-blue-50/50 rounded-3xl"></div>
 
-        <div className="relative flex flex-col items-center text-center space-y-6">
+        <div className="relative flex flex-col sm:flex-row gap-10  items-center text-center">
           {/* Profile Picture */}
           <div className="relative">
-            <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden bg-linear-to-br from-slate-200 to-slate-300 flex justify-center items-center group ring-4 ring-indigo-100 hover:ring-indigo-200 transition-all duration-300">
+            <div className="w-22 h-22 sm:w-26 sm:h-26 rounded-full overflow-hidden bg-linear-to-br from-slate-200 to-slate-300 flex justify-center items-center group ring-4 ring-indigo-100 hover:ring-indigo-200 transition-all duration-300">
               {displayImage ? (
                 <img
                   src={displayImage}
@@ -91,16 +91,17 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ className }) => {
 
           {/* User Info */}
           <div className="space-y-3">
-            <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 leading-tight">
+            <h1 className="text-2xl sm:text-3xl font-bold text-slate-800 leading-tight">
               {user?.userName || "User Name"}
             </h1>
-            <p className="text-xl text-slate-600 font-medium">
+            <p className="text-md text-slate-600 font-medium">
               {user?.profession || "Profession"}
             </p>
-            <p className="text-lg text-slate-500">
+            <p className="text-sm text-slate-500">
               {user?.city || "City"}, {user?.state || "State"}
             </p>
           </div>
+          
         </div>
 
         {/* Decorative Elements */}

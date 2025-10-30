@@ -49,11 +49,11 @@ const PersonalInfo = ({ className }: { className?: string }) => {
   };
 
   return (
-    <div className="flex justify-center items-center w-full h-full px-4 py-8 relative">
+    <div className="flex justify-center items-center w-full h-full pr-2 py-4">
       {/* Modern Info Container */}
       <div
         className={cn(
-          "w-full max-w-4xl bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-slate-200/50",
+          "w-[60vw] max-w-4xl h-[60vh] bg-white/70 backdrop-blur-sm rounded-3xl p-8 shadow-lg border-2 border-black/40",
           className
         )}
       >
@@ -90,7 +90,7 @@ const PersonalInfo = ({ className }: { className?: string }) => {
                 {/* Card Header */}
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center space-x-3 flex-1 min-w-0">
-                    <div className="w-8 h-8 bg-gradient-to-r from-indigo-400 to-blue-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-8 h-8 bg-linear-to-r from-indigo-400 to-blue-400 rounded-lg flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-xs">
                         {item.title.charAt(0).toUpperCase()}
                       </span>
